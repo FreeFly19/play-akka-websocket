@@ -1,0 +1,6 @@
+@(counter: Int)(implicit flash: Flash)
+
+@main("Welcome to Play") {
+  <h1>Welcome to Play! @counter</h1>
+  <h2>@flash.get("message").getOrElse("Counter is incremented")</h2>
+}
